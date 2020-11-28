@@ -1,3 +1,5 @@
-import BhEditor from './main';
+import bhEditor from './main';
 
-BhEditor();
+bhEditor({
+    container: 'editor'
+});

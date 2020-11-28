@@ -1,11 +1,15 @@
+import { EditorConfig } from '../types';
+import Core from './components/core'
+
 export class Editor {
-    constructor() {
-        console.log('biboheart editor')
+    constructor(configuration?: EditorConfig|string) {
+        // tslint:disable-next-line: no-unused-expression
+        new Core(configuration);
     }
 }
 
-function BhEditor() {
+function bhEditor(configuration?: EditorConfig|string) {
     return new Editor();
 }
 
-export default BhEditor;
+export default bhEditor;

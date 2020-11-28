@@ -45,7 +45,7 @@ export default class Dom {
             el.classList.add(classNames);
         }
 
-        if (style != '') {
+        if (style !== '') {
             el.style.cssText = style;
         }
 
@@ -125,9 +125,13 @@ export default class Dom {
      *
      * @returns {HTMLElement}
      */
-    public static getContainer(element: string | HTMLElement): HTMLElement|null {
+    public static getContainer(element: string | HTMLElement): HTMLElement {
         if (typeof element === 'string') {
-            return document.getElementById(element);
+            let el = document.getElementById(element);
+            if (!el) {
+                el = document.body;
+            }
+            return el;
         }
         return element;
     }
