@@ -1,4 +1,7 @@
 import { EditorConfig } from '../types';
+
+import './style/main.scss';
+
 import Core from './components/core'
 
 export class Editor {
@@ -9,7 +12,7 @@ export class Editor {
 }
 
 function bhEditor(configuration?: EditorConfig|string) {
-    return new Editor();
+    return new Editor(configuration);
 }
 
 export default bhEditor;

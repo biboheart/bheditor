@@ -1,21 +1,11 @@
 export {
     EditorConfig
 } from './configs';
-import {
-    Events,
-    Listeners,
-} from './api';
-
-
-export interface API {
-    events: Events;
-    listeners: Listeners;
-}
 
 /**
  * Main Editor class
  */
-declare class EEditor {
+declare class BhEditor {
     public static version: string;
 
     /**
@@ -24,5 +14,5 @@ declare class EEditor {
     public destroy(): void;
 }
 
-export as namespace EEditor;
-export default EEditor;
+export as namespace BhEditor;
+export default BhEditor;
