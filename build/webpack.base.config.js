@@ -18,7 +18,7 @@ let config = {
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: "index.js",
-        library: [ 'EEditor' ],
+        library: [ 'BhEditor' ],
         libraryTarget: 'umd',
     },
     // Enable sourcemaps for debugging webpack's output.

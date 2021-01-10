@@ -93,10 +93,9 @@ export default class SelectionUtils {
 
             return element.getBoundingClientRect();
         }
-        /* let node: HTMLElement = element;
-        if (element.firstChild !== null) {
-            node = element.firstChild;
-        } */
+        if (element instanceof HTMLElement && offset === 0) {
+            return element.getBoundingClientRect();
+        }
         range.setStart(element, offset);
         range.setEnd(element, offset);
 

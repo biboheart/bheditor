@@ -51,7 +51,7 @@
   overflow: hidden;
 }
 
-.editor-input-wrap {
+.editor-hidden-input {
   position: absolute;
   width: 5px;
   height: 5px;
@@ -67,7 +67,7 @@
   white-space: pre-wrap;
 }
 
-.eeditor-caret-wrap {
+.editor-caret {
   will-change: opacity;
   z-index: 20;
   pointer-events: none;

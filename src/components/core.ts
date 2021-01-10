@@ -42,6 +42,7 @@ export default class Core {
         const modulesToPrepare = [
             'Layout',
             'Caret',
+            'Input',
             'PageManager',
         ]
 
